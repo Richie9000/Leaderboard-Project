@@ -12,62 +12,42 @@
     />
     <title>Leaderboard</title>
   </head>
-  <body>
-    <div class="container">
-      <h1 class="card-title m-5">Leaderboard</h1>
-    </div>
-    <main>
-      <div id="add-score">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <ul class="list-group">
-                <div class="container m-2" id="scores">
-                  <div class="row" id="scores-title">
-                    <h2 class="col ml-n5">Recent scores</h2>
-
-                    <button class="col" id="refresh" type="button">
-                      Refresh
-                    </button>
-                  </div>
-                </div>
-                <li class="list-group-item">Pepe 9000</li>
-                <li class="list-group-item">Paco 8000</li>
-                <li class="list-group-item">Gabriel 1000</li>
-                <li class="list-group-item">Pablo 9999</li>
-                <li class="list-group-item">Pedro 7777</li>
-              </ul>
+  <main>
+    <h1 class="title">Leaderboard</h1>
+    <section class="content">
+        <article class="left">
+            <div class="head">
+                <h2 class="subtitle-left">Recent scores</h2>
+                <button class="refresh">Refresh</button>
             </div>
-            <div class="col">
-              <h3>Add your score</h3>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Name</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Your score</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+            <ul class="score-list">
+                <table class="table">
+                    <tr class="table-title">
+                        <th class="table-title">Name</th>
+                        <th class="table-title">Score</th>
+                    </tr>
+                </table>
+            </ul>
+        </article>s
+        <article class="right">
+            <h2 class="subtitle-right">Add your score</h2>
+            <form id="form">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Your name" />
+                    </li>
+                    <li>
+                        <label for="score">Score:</label>
+                        <input type="number" id="score" name="user_score" placeholder="Your score" min ="0" max="9999"/>
+                    </li>
+                    <li>
+                        <button type="submit" class="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </article>
+    </section>`
+</main>
+</body>
 </html>
