@@ -10,18 +10,17 @@
 
 ## Project Setup
 
-- Clone this repository (use this SSH key https://github.com/sevinchek/leaderboard.git)
+- Clone this repository
 - Open the folder project (to-do-list)
 - Install all dependencies with "npm install"
 - Run the project with "npm start" and the project will load automatically in your default browser
 
 ## Authors
 
-👤 **Kevin**
+👤 **Ricardo**
 
-- GitHub: [@sevinchek](https://github.com/sevinchek)
-- Twitter: [@sevinchek](https://twitter.com/sevinchek)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sevinchek)
+- GitHub: [@Richie9000](https://github.com/Richie9000)
+- Twitter: [@R1ck1987](https://twitter.com/R1ck1987")
 
 ## 🤝 Contributing
 
