@@ -2,7 +2,7 @@
 
 > This is my website for a Leaderboard
 
-![screenshot](./src/img/app-screenshot.png)
+![screenshot](./src/img/leadboard.png)
 
 ## Built With
 

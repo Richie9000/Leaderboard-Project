@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './style.css';
 import { createTable, sortScores } from './modules/create.js';
 import { addScore, getScores } from './modules/scores.js';
 
