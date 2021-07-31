@@ -13,41 +13,43 @@
     <title>Leaderboard</title>
   </head>
   <main>
-    <h1 class="title">Leaderboard</h1>
-    <section class="content">
-        <article class="left">
-            <div class="head">
-                <h2 class="subtitle-left">Recent scores</h2>
-                <button class="refresh">Refresh</button>
-            </div>
-            <ul class="score-list">
-                <table class="table">
-                    <tr class="table-title">
-                        <th class="table-title">Name</th>
-                        <th class="table-title">Score</th>
-                    </tr>
-                </table>
-            </ul>
-        </article>s
-        <article class="right">
-            <h2 class="subtitle-right">Add your score</h2>
-            <form id="form">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" placeholder="Your name" />
-                    </li>
-                    <li>
-                        <label for="score">Score:</label>
-                        <input type="number" id="score" name="user_score" placeholder="Your score" min ="0" max="9999"/>
-                    </li>
-                    <li>
-                        <button type="submit" class="submit">Submit</button>
-                    </li>
+    <h1 class="d-flex justify-content-center m-5">Leaderboard</h1>
+    <section class="container">
+        <div class="row justify-content-evenly">
+            <article class="left col-4">
+                <div class="head">
+                    <h2 class="d-flex justify-content-center m-2">Recent scores</h2>
+                    <button class="refresh">Refresh</button>
+                </div>
+                <ul class="score-list">
+                    <table class="table">
+                        <tr class="table-title">
+                            <th class="table-title">Name</th>
+                            <th class="table-title">Score</th>
+                        </tr>
+                    </table>
                 </ul>
-            </form>
-        </article>
-    </section>`
+            </article>
+            <article class="right col-4">
+                <h2 class="subtitle-right">Add your score</h2>
+                <form id="form">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" placeholder="Your name" />
+                        </li>
+                        <li>
+                            <label for="score">Score:</label>
+                            <input type="number" id="score" name="user_score" placeholder="Your score" min ="0" max="9999"/>
+                        </li>
+                        <li>
+                            <button type="submit" class="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </article>
+        </div>
+    </section>
 </main>
 </body>
 </html>
