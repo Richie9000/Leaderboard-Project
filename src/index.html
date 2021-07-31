@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <title>Leaderboard</title>
   </head>
   <main>
     <h1 class="d-flex justify-content-center m-5">Leaderboard</h1>
     <section class="container">
         <div class="row justify-content-evenly">
-            <article class="left col-4">
+            <article class="left col-3 border border-light border-5 rounded-3 bg-light">
                 <div class="head">
                     <h2 class="d-flex justify-content-center m-2">Recent scores</h2>
-                    <button class="refresh">Refresh</button>
+                    <div class="d-flex justify-content-center m-2">
+
+                        <button class="refresh btn btn-primary">Refresh</button>
+                    </div>
                 </div>
                 <ul class="score-list">
                     <table class="table">
@@ -30,20 +32,20 @@
                     </table>
                 </ul>
             </article>
-            <article class="right col-4">
-                <h2 class="subtitle-right">Add your score</h2>
+            <article class="right col-3 border border-light border-5 rounded-3 bg-light">
+                <h2 class="d-flex justify-content-center m-2">Add your score</h2>
                 <form id="form">
-                    <ul>
-                        <li>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name" placeholder="Your name" />
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <label class="form-label" for="name">Name:</label>
+                            <input type="text" id="name" class="form-control" name="user_name" placeholder="Your name" />
+                        </li>
+                        <li class="mb-3">
+                            <label class="form-label" for="score">Score:</label>
+                            <input type="number" id="score" class="form-control" name="user_score" placeholder="Your score" min ="0" max="9999"/>
                         </li>
                         <li>
-                            <label for="score">Score:</label>
-                            <input type="number" id="score" name="user_score" placeholder="Your score" min ="0" max="9999"/>
-                        </li>
-                        <li>
-                            <button type="submit" class="submit">Submit</button>
+                            <button type="submit" class="submit refresh btn btn-primary">Submit</button>
                         </li>
                     </ul>
                 </form>
